@@ -10,15 +10,10 @@ int y_axis_degree = 90;
 int z_axis_degree = 85;
 int clamp_degree = 90;
 
-//***************************************************************************
-//The defining of analog input pins tested with Arduino UNO and Arduino Nano. 
-//The other cards not tested
-
 #define left_joystick_x A1
 #define left_joystick_y A0
 #define right_joystick_x A3
 #define right_joystick_y A2
-//****************************************************************************
 
 void setup() {
   Serial.begin(9600);
@@ -47,8 +42,6 @@ void loop() {
   if(right_joystick_y_value < 340) z_axis_degree -=7;
   else if(right_joystick_y_value > 680) z_axis_degree +=7;
 
-  //*************************************
-  //You should decide the max/min angles.
   z_axis_degree = min(145, max(15, z_axis_degree));
   x_axis_degree = min(175, max(40, x_axis_degree));
   y_axis_degree = min(150, max(5, y_axis_degree));
