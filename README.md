@@ -4,4 +4,5 @@
 ![Stars](https://img.shields.io/github/stars/Luis3Fernando/Robot-Arm-4DOF?style=social)
 
 This is a code to be used in a 4 DOF (four degrees of freedom) robotic arm. It must be used with 3-axis analog joystick modules.
-## DIAGRAM
+## 📔 DIAGRAM
+## 🤖 FEATURES
